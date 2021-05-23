@@ -1,0 +1,227 @@
+\hypertarget{classpkg_1_1game_timer}{}\section{pkg.\+game\+Timer 클래스 참조}
+\label{classpkg_1_1game_timer}\index{pkg.\+game\+Timer@{pkg.\+game\+Timer}}
+
+
+위쪽에 시간을 띄우고 시간 정보를 갖고있는 클래스  
+
+
+
+
+pkg.\+game\+Timer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+game\+Timer에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1game_timer_a8cdd50788a7196c4b8ed3e186c7728c9}{game\+Timer} ()
+\item 
+\hyperlink{classpkg_1_1game_timer_a2db9c7f237de004229805f519c23b7e2}{game\+Timer} (J\+Label t)
+\item 
+void \hyperlink{classpkg_1_1game_timer_a211204d90baec9a6726c0e742e2fdffa}{run} ()
+\item 
+int \hyperlink{classpkg_1_1game_timer_ac9a650d8eaf327e8108cac67fbbfdfad}{get\+Second} ()
+\item 
+int \hyperlink{classpkg_1_1game_timer_af37924eb416037022e0063ae1be50e73}{get\+Minute} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}
+\item 
+int \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}
+\item 
+J\+Label \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+위쪽에 시간을 띄우고 시간 정보를 갖고있는 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/06-\/08 
+\end{DoxyDate}
+
+
+game\+Timer.\+java 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!game\+Timer@{game\+Timer}}
+\index{game\+Timer@{game\+Timer}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{game\+Timer()}{gameTimer()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+game\+Timer.\+game\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1game_timer_a8cdd50788a7196c4b8ed3e186c7728c9}{}\label{classpkg_1_1game_timer_a8cdd50788a7196c4b8ed3e186c7728c9}
+
+
+game\+Timer.\+java 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+20 \{\}
+\end{DoxyCode}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!game\+Timer@{game\+Timer}}
+\index{game\+Timer@{game\+Timer}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{game\+Timer(\+J\+Label t)}{gameTimer(JLabel t)}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+game\+Timer.\+game\+Timer (
+\begin{DoxyParamCaption}
+\item[{J\+Label}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1game_timer_a2db9c7f237de004229805f519c23b7e2}{}\label{classpkg_1_1game_timer_a2db9c7f237de004229805f519c23b7e2}
+
+
+game\+Timer.\+java 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+22                               \{
+23         \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time} = t;
+24         
+25         \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} = 0;
+26         \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute} = 0;
+27     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!get\+Minute@{get\+Minute}}
+\index{get\+Minute@{get\+Minute}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{get\+Minute()}{getMinute()}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+game\+Timer.\+get\+Minute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1game_timer_af37924eb416037022e0063ae1be50e73}{}\label{classpkg_1_1game_timer_af37924eb416037022e0063ae1be50e73}
+
+
+game\+Timer.\+java 파일의 65 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+game\+Timer.\+minute.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+decide\+End().
+
+
+\begin{DoxyCode}
+65                            \{
+66         \textcolor{keywordflow}{return} \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute};
+67     \}
+\end{DoxyCode}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!get\+Second@{get\+Second}}
+\index{get\+Second@{get\+Second}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{get\+Second()}{getSecond()}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+game\+Timer.\+get\+Second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1game_timer_ac9a650d8eaf327e8108cac67fbbfdfad}{}\label{classpkg_1_1game_timer_ac9a650d8eaf327e8108cac67fbbfdfad}
+
+
+game\+Timer.\+java 파일의 61 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+game\+Timer.\+second.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+decide\+End().
+
+
+\begin{DoxyCode}
+61                            \{
+62         \textcolor{keywordflow}{return} \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second};
+63     \}
+\end{DoxyCode}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!run@{run}}
+\index{run@{run}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+game\+Timer.\+run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1game_timer_a211204d90baec9a6726c0e742e2fdffa}{}\label{classpkg_1_1game_timer_a211204d90baec9a6726c0e742e2fdffa}
+
+
+game\+Timer.\+java 파일의 30 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+30                      \{
+31         
+32         \textcolor{keywordflow}{while}(flag)\{
+33                 
+34             \textcolor{keywordflow}{try}\{
+35                 sleep(1000);
+36             
+37                 \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} == 59)\{
+38                     \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} = 0;
+39                     \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}++;
+40                 \}
+41                 \textcolor{keywordflow}{else}\{
+42                     \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}++;
+43                 \}
+44             
+45                 \textcolor{keywordflow}{if}(minute <= 9 && second >= 10)
+46                     \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time}.setText(String.format(\textcolor{stringliteral}{"0%d:%d"}, \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}, 
+      \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}));
+47                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute} >= 10 && \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} <= 9)
+48                     \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time}.setText(String.format(\textcolor{stringliteral}{"%d:0%d"}, \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}, 
+      \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}));
+49                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute} >= 10 && \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} >= 10)
+50                     \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time}.setText(String.format(\textcolor{stringliteral}{"%d:%d"}, \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}, \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}));
+51                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute} <= 9 && \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second} <= 9)
+52                     \hyperlink{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{time}.setText(String.format(\textcolor{stringliteral}{"0%d:0%d"}, \hyperlink{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{minute}, 
+      \hyperlink{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{second}));
+53             
+54             \}\textcolor{keywordflow}{catch}(InterruptedException e)\{
+55                 e.printStackTrace();
+56             \}
+57         \}
+58         
+59     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!minute@{minute}}
+\index{minute@{minute}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{minute}{minute}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+game\+Timer.\+minute\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}{}\label{classpkg_1_1game_timer_ad7da9d653901d69078509ea47694bcfa}
+
+
+game\+Timer.\+java 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+game\+Timer.\+get\+Minute().
+
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!second@{second}}
+\index{second@{second}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{second}{second}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+game\+Timer.\+second\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}{}\label{classpkg_1_1game_timer_a06c42bbe6c9cacd4b94a0dcae1564208}
+
+
+game\+Timer.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+game\+Timer.\+get\+Second().
+
+\index{pkg\+::game\+Timer@{pkg\+::game\+Timer}!time@{time}}
+\index{time@{time}!pkg\+::game\+Timer@{pkg\+::game\+Timer}}
+\subsubsection[{\texorpdfstring{time}{time}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+game\+Timer.\+time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}{}\label{classpkg_1_1game_timer_adc15a552f72e3252db98b1589e04b614}
+
+
+game\+Timer.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/pkg/\hyperlink{game_timer_8java}{game\+Timer.\+java}\end{DoxyCompactItemize}

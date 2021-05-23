@@ -1,0 +1,11 @@
+digraph "pkg.rankInOut.InsertWrite"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.rankInOut.InsertWrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="pkg.rankInfo.getMinute",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1rank_info.html#a4d5ebf729e4c5ecd82928476f9870a14"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="pkg.rankInfo.getSecond",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1rank_info.html#a60abc8500ee5e19582f44994932a5f32"];
+}

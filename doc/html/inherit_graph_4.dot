@@ -1,0 +1,7 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.rankInOut",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1rank_in_out.html",tooltip="랭킹 정보를 기록하고 화면에 띄우기 위한 클래스 "];
+}

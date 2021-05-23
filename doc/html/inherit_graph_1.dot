@@ -1,0 +1,9 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Thread",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pkg.gameTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1game_timer.html",tooltip="위쪽에 시간을 띄우고 시간 정보를 갖고있는 클래스 "];
+}

@@ -1,0 +1,852 @@
+\hypertarget{classpkg_1_1main_frame}{}\section{pkg.\+main\+Frame 클래스 참조}
+\label{classpkg_1_1main_frame}\index{pkg.\+main\+Frame@{pkg.\+main\+Frame}}
+
+
+지뢰찾기 게임이 진행되는 데에 있어 중심이 되는 UI 클래스  
+
+
+
+
+pkg.\+main\+Frame에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+main\+Frame에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{main\+Frame} ()
+\item 
+void \hyperlink{classpkg_1_1main_frame_afee0fd4f159914a14f60d540051e99da}{set\+Game} ()
+\item 
+boolean \hyperlink{classpkg_1_1main_frame_a7de04de5a18ef73c659082c62f4fd250}{is\+Number} (String num)
+\item 
+boolean \hyperlink{classpkg_1_1main_frame_af58a9fa8a1605e5af98f91662963715b}{is\+Blank} (String str)
+\end{DoxyCompactItemize}
+\subsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classpkg_1_1main_frame_a2d1242ddfef355cb870da28709a35479}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{L\+E\+V\+EL} = \char`\"{}Novice\char`\"{}
+\item 
+static int \hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{P\+R\+O\+WS} = 8
+\item 
+static int \hyperlink{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{M\+I\+NE} = 7
+\item 
+static int \hyperlink{classpkg_1_1main_frame_a505e81ce8df404341832e27fcb88e1de}{F\+L\+AG} = 0
+\item 
+static int \hyperlink{classpkg_1_1main_frame_a05dfc088773f5e52294e2ca37cccbcf1}{Total\+F\+L\+AG} = 0
+\item 
+static boolean \hyperlink{classpkg_1_1main_frame_ad050752ff60e9b7fa6ea201df1b223a6}{started} = false
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1main_frame_af97296a25c6856f7a7078d0418773229}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1main_frame}{main\+Frame} \hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{this\+Class} = this
+\item 
+char\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}
+\item 
+\hyperlink{classpkg_1_1rank_info}{rank\+Info}\mbox{[}$\,$\mbox{]} \hyperlink{classpkg_1_1main_frame_a4a021c36a28ece6900f13d2254e13a96}{rank} = new \hyperlink{classpkg_1_1rank_info}{rank\+Info}\mbox{[}5\mbox{]}
+\item 
+\hyperlink{classpkg_1_1game_timer}{game\+Timer} \hyperlink{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{timer}
+\item 
+J\+Panel \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{g\+Panel}
+\item 
+J\+Panel \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{main\+Content}
+\item 
+J\+Menu\+Bar \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menu\+Bar}
+\item 
+J\+Menu \hyperlink{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{mn\+Exit}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}{mntm\+Exit}
+\item 
+J\+Menu \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mn\+Level}
+\item 
+J\+Menu \hyperlink{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{mn\+Record}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}{mntm\+Ranking}
+\item 
+J\+Label \hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{label\+Time}
+\item 
+J\+Radio\+Button \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckbox\+Flag}
+\item 
+Button\+Group \hyperlink{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}{grp1}
+\item 
+J\+Radio\+Button\+Menu\+Item \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radio\+Button\+Novice}
+\item 
+J\+Radio\+Button\+Menu\+Item \hyperlink{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{radio\+Button\+Intermediate}
+\item 
+J\+Radio\+Button\+Menu\+Item \hyperlink{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{radio\+Button\+Expert}
+\item 
+J\+Radio\+Button\+Menu\+Item \hyperlink{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{radio\+Button\+Customize}
+\item 
+Button\+Group \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+지뢰찾기 게임이 진행되는 데에 있어 중심이 되는 UI 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/06-\/08 
+\end{DoxyDate}
+
+
+main\+Frame.\+java 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!main\+Frame@{main\+Frame}}
+\index{main\+Frame@{main\+Frame}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{main\+Frame()}{mainFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+main\+Frame.\+main\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{}\label{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}
+
+
+main\+Frame.\+java 파일의 87 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+main\+Frame.\+initialize().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+main().
+
+
+\begin{DoxyCode}
+87                        \{
+88         
+89         setTitle(\textcolor{stringliteral}{"Find Bomb!!"});
+90         setBounds(50, 50, 1070, 900);
+91         setVisible(\textcolor{keyword}{true});
+92         setResizable(\textcolor{keyword}{false});
+93         setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);
+94         
+95         addWindowListener(\textcolor{keyword}{new} WindowAdapter() \{
+96             @Override
+97             \textcolor{keyword}{public} \textcolor{keywordtype}{void} windowClosed(WindowEvent arg0) \{
+98                 System.exit(0);
+99             \}
+100         \});
+101         
+102         \hyperlink{classpkg_1_1main_frame_af97296a25c6856f7a7078d0418773229}{initialize}();
+103     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+main\+Frame.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_af97296a25c6856f7a7078d0418773229}{}\label{classpkg_1_1main_frame_af97296a25c6856f7a7078d0418773229}
+
+
+main\+Frame.\+java 파일의 105 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+main\+Frame.\+is\+Blank(), pkg.\+main\+Frame.\+is\+Number(), pkg.\+main\+Frame.\+set\+Game(), pkg.\+rank\+In\+Out.\+show\+All(), pkg.\+main\+Frame.\+started.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+main\+Frame().
+
+
+\begin{DoxyCode}
+105                              \{
+106         
+107         \textcolor{keywordflow}{try} \{
+108             String s;
+109             \textcolor{keywordtype}{int} i = 0;
+110             BufferedReader in = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} FileReader(\textcolor{stringliteral}{"src/data/ranking.txt"}));
+111               
+112             \textcolor{keywordflow}{while} ((s = in.readLine()) != null) \{
+113                 String[] strs = s.split(\textcolor{stringliteral}{" "});
+114                 \hyperlink{classpkg_1_1main_frame_a4a021c36a28ece6900f13d2254e13a96}{rank}[i] = \textcolor{keyword}{new} rankInfo(strs[0], Integer.valueOf(strs[1]), Integer.valueOf(strs[2]));
+115                 i++;
+116             \}
+117               
+118             in.close();
+119         \} \textcolor{keywordflow}{catch} (IOException e) \{
+120             e.printStackTrace();
+121         \}
+122         
+123         handleRank = \textcolor{keyword}{new} rankInOut(\hyperlink{classpkg_1_1main_frame_a4a021c36a28ece6900f13d2254e13a96}{rank}, \textcolor{keyword}{this});
+124         
+125         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent} = \textcolor{keyword}{new} JPanel();
+126         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+127         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.setLayout(null);
+128         
+129         setContentPane(\hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent});
+130         
+131         \hyperlink{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{timer} = \textcolor{keyword}{new} gameTimer();
+132         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel} = \textcolor{keyword}{new} JPanel();
+133         
+134         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+135         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setBounds(17, 103, 1027, 733);
+136         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setLayout(\textcolor{keyword}{new} GridLayout(\hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS},\hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS},0,0));
+137         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(\hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel});
+138         
+139         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar} = \textcolor{keyword}{new} JMenuBar();
+140         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar}.setBackground(\textcolor{keyword}{new} Color(0, 153, 255));
+141         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar}.setBounds(0, 0, 1064, 31);
+142         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(\hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar});
+143         
+144         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Level"});
+145         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel}.setForeground(Color.WHITE);
+146         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar}.add(\hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel});
+147         
+148         \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice} = \textcolor{keyword}{new} JRadioButtonMenuItem(\textcolor{stringliteral}{"Novice"});
+149         \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+150             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+151                 \textcolor{keywordflow}{if} (e.getStateChange() == ItemEvent.SELECTED) \{
+152                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.started)\{
+153                         JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"게임이 이미 진행중입니다."},
+154                                 \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+155                         \textcolor{keywordflow}{return};
+156                     \}
+157                     
+158                     \hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS} = 8;
+159                     \hyperlink{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{MINE} = 7;
+160                     \hyperlink{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{LEVEL} = \textcolor{stringliteral}{"Novice"};
+161                 \}
+162             \}
+163         \});
+164         \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice}.setSelected(\textcolor{keyword}{true});
+165         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel}.add(\hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice});
+166         
+167         \hyperlink{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{radioButtonIntermediate} = \textcolor{keyword}{new} JRadioButtonMenuItem(\textcolor{stringliteral}{"Intermediate"});
+168         \hyperlink{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{radioButtonIntermediate}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+169             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+170                 \textcolor{keywordflow}{if} (e.getStateChange() == ItemEvent.SELECTED) \{
+171                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.started)\{
+172                         JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"게임이 이미 진행중입니다."},
+173                                 \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+174                         \textcolor{keywordflow}{return};
+175                     \}
+176                     
+177                     \hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS} = 16;
+178                     \hyperlink{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{MINE} = 77;
+179                     \hyperlink{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{LEVEL} = \textcolor{stringliteral}{"Intermediate"};
+180                 \}
+181             \}
+182         \});
+183         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel}.add(\hyperlink{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{radioButtonIntermediate});
+184         
+185         \hyperlink{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{radioButtonExpert} = \textcolor{keyword}{new} JRadioButtonMenuItem(\textcolor{stringliteral}{"Expert"});
+186         \hyperlink{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{radioButtonExpert}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+187             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+188                 \textcolor{keywordflow}{if} (e.getStateChange() == ItemEvent.SELECTED) \{
+189                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.started)\{
+190                         JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"게임이 이미 진행중입니다."},
+191                                 \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+192                         \textcolor{keywordflow}{return};
+193                     \}
+194                     
+195                     \hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS} = 24;
+196                     \hyperlink{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{MINE} = 288;
+197                     \hyperlink{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{LEVEL} = \textcolor{stringliteral}{"Expert"};
+198                 \}
+199             \}
+200         \});
+201         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel}.add(\hyperlink{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{radioButtonExpert});
+202         
+203         \hyperlink{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{radioButtonCustomize} = \textcolor{keyword}{new} JRadioButtonMenuItem(\textcolor{stringliteral}{"Customize"});
+204         \hyperlink{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{radioButtonCustomize}.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+205             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent e) \{
+206                 \textcolor{keywordflow}{if} (e.getStateChange() == ItemEvent.SELECTED) \{
+207                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.started)\{
+208                         JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"게임이 이미 진행중입니다."},
+209                                 \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+210                         \textcolor{keywordflow}{return};
+211                     \}
+212                     
+213                     String row = JOptionPane.showInputDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass},
+214                             \textcolor{stringliteral}{"행과 열(n*n) 갯수를 입력하십시오"}, \textcolor{stringliteral}{""});
+215                     String mine = JOptionPane.showInputDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass},
+216                             \textcolor{stringliteral}{"지뢰의 갯수를 입력하십시오"}, \textcolor{stringliteral}{""});
+217                     
+218                     \textcolor{keywordflow}{if}(row != null && mine != null)\{
+219                         \textcolor{keywordflow}{if}(!(\hyperlink{classpkg_1_1main_frame_a7de04de5a18ef73c659082c62f4fd250}{isNumber}(row) && \hyperlink{classpkg_1_1main_frame_a7de04de5a18ef73c659082c62f4fd250}{isNumber}(mine)))\{
+220                             JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"유효한 값을 입력해 주세요"},
+221                                     \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+222                             \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice}.setSelected(\textcolor{keyword}{true});
+223                             \textcolor{keywordflow}{return};
+224                         \}
+225                         
+226                         \textcolor{keywordtype}{int} Irow = Integer.valueOf(row);
+227                         \textcolor{keywordtype}{int} Imine = Integer.valueOf(mine);
+228                         
+229                         \textcolor{keywordflow}{if}(Irow > 24)\{
+230                             JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"행과 열 갯수는 24 이하이여야 합니다"},
+231                                     \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+232                             \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice}.setSelected(\textcolor{keyword}{true});
+233                         \}
+234                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(Irow*Irow <= Imine)\{
+235                             JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"지뢰의 갯수가 너무 많습니다"},
+236                                     \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+237                             \hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice}.setSelected(\textcolor{keyword}{true});
+238                         \}
+239                         \textcolor{keywordflow}{else} \{
+240                             \hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS} = Irow;
+241                             \hyperlink{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{MINE} = Imine;
+242                             \hyperlink{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{LEVEL} = \textcolor{stringliteral}{"Customize"};
+243                             JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"정상적으로 설정 되었습니다"},
+244                                     \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+245                         \}
+246                     \}
+247                 \}
+248             \}
+249         \});
+250         \hyperlink{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{mnLevel}.add(\hyperlink{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{radioButtonCustomize});
+251         
+252         \hyperlink{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{mnRecord} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Record"});
+253         \hyperlink{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{mnRecord}.setForeground(Color.WHITE);
+254         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar}.add(\hyperlink{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{mnRecord});
+255         
+256         \hyperlink{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}{mntmRanking} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Ranking"});
+257         \hyperlink{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}{mntmRanking}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+258             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+259                 handleRank.\hyperlink{classpkg_1_1rank_in_out_aac3fb70f8205bdfeb25a6c98a0f4aba8}{showAll}();
+260             \}
+261         \});
+262         \hyperlink{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{mnRecord}.add(\hyperlink{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}{mntmRanking});
+263         
+264         \hyperlink{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{mnExit} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Exit"});
+265         \hyperlink{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{mnExit}.setForeground(Color.WHITE);
+266         \hyperlink{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{menuBar}.add(\hyperlink{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{mnExit});
+267         
+268         \hyperlink{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}{mntmExit} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Exit"});
+269         \hyperlink{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}{mntmExit}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+270             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+271                 \textcolor{keywordtype}{int} q = JOptionPane.showConfirmDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"정말로 나가시겠습니까?"}, \textcolor{stringliteral}{"Question"}, 
+      JOptionPane.YES\_NO\_OPTION);
+272                 \textcolor{keywordflow}{if}(q == JOptionPane.YES\_OPTION)
+273                     System.exit(0);
+274             \}
+275         \});
+276         \hyperlink{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{mnExit}.add(\hyperlink{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}{mntmExit});
+277         
+278         btnStart = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"START"});
+279         btnStart.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+280             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+281                 name = JOptionPane.showInputDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass},
+282                         \textcolor{stringliteral}{"이름을 입력하십시오 (공백 없이)"}, \textcolor{stringliteral}{""});
+283                 
+284                 \textcolor{keywordflow}{if}(name != null)\{
+285                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_af58a9fa8a1605e5af98f91662963715b}{isBlank}(name))\{
+286                         JOptionPane.showMessageDialog(\hyperlink{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{thisClass}, \textcolor{stringliteral}{"공백 없이 입력해 주세요"},
+287                                 \textcolor{stringliteral}{"Notice"}, JOptionPane.INFORMATION\_MESSAGE);
+288                         \textcolor{keywordflow}{return};
+289                     \}
+290                     
+291                     btnStart.setEnabled(\textcolor{keyword}{false});
+292                     btnStart.setVisible(\textcolor{keyword}{false});
+293                 
+294                     \hyperlink{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{timer} = \textcolor{keyword}{new} gameTimer(\hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime});
+295                     \hyperlink{classpkg_1_1main_frame_afee0fd4f159914a14f60d540051e99da}{setGame}();
+296                 
+297                     gameTimer.flag = \textcolor{keyword}{true};
+298                     \hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime}.setText(\textcolor{stringliteral}{"00:00"});
+299                     \hyperlink{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{timer}.start();
+300                 \}
+301             \}
+302         \});
+303         btnStart.setForeground(\textcolor{keyword}{new} Color(255, 255, 255));
+304         btnStart.setBackground(\textcolor{keyword}{new} Color(0, 51, 255));
+305         btnStart.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.BOLD, 22));
+306         btnStart.setBounds(17, 47, 125, 41);
+307         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(btnStart);
+308         
+309         \hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"00:00"});
+310         \hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 30));
+311         \hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime}.setBounds(948, 47, 96, 41);
+312         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(\hyperlink{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{labelTime});
+313         
+314         ckboxHand = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"Hand"});
+315         ckboxHand.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+316         ckboxHand.setForeground(Color.BLUE);
+317         ckboxHand.setSelected(\textcolor{keyword}{true});
+318         ckboxHand.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 22));
+319         ckboxHand.setBounds(442, 63, 85, 29);
+320         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(ckboxHand);
+321         
+322         \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag} = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"Flag"});
+323         \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag}.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+324         \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag}.setForeground(Color.BLUE);
+325         \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 22));
+326         \hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag}.setBounds(536, 63, 85, 29);
+327         \hyperlink{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{mainContent}.add(\hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag});
+328         
+329         \hyperlink{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}{grp1} = \textcolor{keyword}{new} ButtonGroup();
+330         \hyperlink{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}{grp1}.add(ckboxHand);
+331         \hyperlink{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}{grp1}.add(\hyperlink{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{ckboxFlag});
+332         
+333         \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2} = \textcolor{keyword}{new} ButtonGroup();
+334         \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2}.add(\hyperlink{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{radioButtonNovice});
+335         \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2}.add(\hyperlink{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{radioButtonIntermediate});
+336         \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2}.add(\hyperlink{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{radioButtonExpert});
+337         \hyperlink{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{grp2}.add(\hyperlink{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{radioButtonCustomize});
+338     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!is\+Blank@{is\+Blank}}
+\index{is\+Blank@{is\+Blank}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{is\+Blank(\+String str)}{isBlank(String str)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean pkg.\+main\+Frame.\+is\+Blank (
+\begin{DoxyParamCaption}
+\item[{String}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1main_frame_af58a9fa8a1605e5af98f91662963715b}{}\label{classpkg_1_1main_frame_af58a9fa8a1605e5af98f91662963715b}
+
+\begin{DoxyParams}{매개변수}
+{\em str} & 공백이 있는지 없는지 판단받기 위한 값 \\
+\hline
+\end{DoxyParams}
+
+
+main\+Frame.\+java 파일의 448 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+initialize().
+
+
+\begin{DoxyCode}
+448                                       \{  \textcolor{comment}{// string 값에 공백이 있는지 판단하는 함수}
+449         
+450         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<str.length(); i++)\{
+451             \textcolor{keywordtype}{char} c = str.charAt(i);
+452             
+453             \textcolor{keywordflow}{if}(c == \textcolor{charliteral}{' '})
+454                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+455         \}
+456         
+457         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+458     \}
+\end{DoxyCode}
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!is\+Number@{is\+Number}}
+\index{is\+Number@{is\+Number}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{is\+Number(\+String num)}{isNumber(String num)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean pkg.\+main\+Frame.\+is\+Number (
+\begin{DoxyParamCaption}
+\item[{String}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1main_frame_a7de04de5a18ef73c659082c62f4fd250}{}\label{classpkg_1_1main_frame_a7de04de5a18ef73c659082c62f4fd250}
+
+\begin{DoxyParams}{매개변수}
+{\em num} & 숫자인지 아닌지 판단받기 위한 값 \\
+\hline
+\end{DoxyParams}
+
+
+main\+Frame.\+java 파일의 431 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+initialize().
+
+
+\begin{DoxyCode}
+431                                        \{  \textcolor{comment}{// string 값이 숫자인지 아닌지 판단하는 함수}
+432         
+433         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<num.length(); i++)\{
+434             \textcolor{keywordtype}{char} c = num.charAt(i);
+435             
+436             \textcolor{keywordflow}{if}(c != \textcolor{charliteral}{'0'} && c != \textcolor{charliteral}{'1'} && c != \textcolor{charliteral}{'2'} && c != \textcolor{charliteral}{'3'} && c != \textcolor{charliteral}{'4'} && c != \textcolor{charliteral}{'5'} && 
+437                     c != \textcolor{charliteral}{'6'} && c != \textcolor{charliteral}{'7'} && c != \textcolor{charliteral}{'8'} && c != \textcolor{charliteral}{'9'})
+438                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+439         \}
+440         
+441         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+442     \}
+\end{DoxyCode}
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!main@{main}}
+\index{main@{main}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void pkg.\+main\+Frame.\+main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_a2d1242ddfef355cb870da28709a35479}{}\label{classpkg_1_1main_frame_a2d1242ddfef355cb870da28709a35479}
+
+
+main\+Frame.\+java 파일의 74 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+main\+Frame.\+main\+Frame().
+
+
+\begin{DoxyCode}
+74                                           \{
+75         EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+76             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+77                 \textcolor{keywordflow}{try} \{
+78                     \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame} frame = \textcolor{keyword}{new} \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}();
+79                     frame.setVisible(\textcolor{keyword}{true});
+80                 \} \textcolor{keywordflow}{catch} (Exception e) \{
+81                     e.printStackTrace();
+82                 \}
+83             \}
+84         \});
+85     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!set\+Game@{set\+Game}}
+\index{set\+Game@{set\+Game}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{set\+Game()}{setGame()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+main\+Frame.\+set\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1main_frame_afee0fd4f159914a14f60d540051e99da}{}\label{classpkg_1_1main_frame_afee0fd4f159914a14f60d540051e99da}
+
+
+main\+Frame.\+java 파일의 340 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+main\+Frame.\+F\+L\+AG, pkg.\+main\+Frame.\+L\+E\+V\+EL, pkg.\+main\+Frame.\+M\+I\+NE, pkg.\+main\+Frame.\+P\+R\+O\+WS, pkg.\+main\+Frame.\+started, pkg.\+main\+Frame.\+Total\+F\+L\+AG.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+initialize().
+
+
+\begin{DoxyCode}
+340                          \{
+341         \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.FLAG = 0;
+342         \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.TotalFLAG = 0;
+343         \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.started = \textcolor{keyword}{true};
+344         
+345         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setVisible(\textcolor{keyword}{false});
+346         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.removeAll();
+347         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setLayout(\textcolor{keyword}{new} GridLayout(\hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS},\hyperlink{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{PROWS},0,0));
+348         
+349         buttons = \textcolor{keyword}{new} JButton[\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS][];
+350         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; i++)
+351             buttons[i] = \textcolor{keyword}{new} JButton[\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS];
+352         
+353         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; i++)\{
+354             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; j++)\{
+355                 buttons[i][j] = \textcolor{keyword}{new} JButton();
+356                 buttons[i][j].setForeground(\textcolor{keyword}{new} Color(0, 0, 0));
+357                 buttons[i][j].setBackground(\textcolor{keyword}{new} Color(0, 230, 255));
+358                 buttons[i][j].setEnabled(\textcolor{keyword}{true});
+359                 
+360                 \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.LEVEL.equals(\textcolor{stringliteral}{"Novice"}))
+361                     buttons[i][j].setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.BOLD, 30));
+362                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.LEVEL.equals(\textcolor{stringliteral}{"Intermediate"}))
+363                     buttons[i][j].setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.BOLD, 25));
+364                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.LEVEL.equals(\textcolor{stringliteral}{"Expert"}) || \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.LEVEL.equals(\textcolor{stringliteral}{"
+      Customize"}))
+365                     buttons[i][j].setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.BOLD, 12));
+366                 
+367                 buttons[i][j].setText(\textcolor{stringliteral}{""});
+368                 
+369                 \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.add(buttons[i][j]);
+370             \}
+371         \}
+372         
+373         \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs} = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS+2][];
+374         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS+2; i++)
+375             \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i] = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS+2];
+376         
+377         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS+2; i++)
+378             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS+2; j++)
+379                 \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i][j] = \textcolor{charliteral}{' '};
+380         
+381         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n=1; n<=\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.MINE; n++)\{
+382                 
+383             \textcolor{keywordtype}{int} x;
+384             \textcolor{keywordtype}{int} y;
+385             
+386             \textcolor{keywordflow}{do}\{
+387                 x = (int)(Math.random() * \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS) + 1;
+388                 y = (int)(Math.random() * \hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS) + 1;
+389             \}\textcolor{keywordflow}{while}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[x][y] == \textcolor{charliteral}{'*'});
+390             
+391             \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[x][y] = \textcolor{charliteral}{'*'};
+392         \}
+393         
+394         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1; i<=\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; i++)\{
+395             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=1; j<=\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; j++)\{
+396                 \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i][j] != \textcolor{charliteral}{'*'})\{
+397                     \textcolor{keywordtype}{int} n = 0;
+398                 
+399                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i][j-1] == \textcolor{charliteral}{'*'}) n++;
+400                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i-1][j-1] == \textcolor{charliteral}{'*'}) n++;
+401                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i-1][j] == \textcolor{charliteral}{'*'}) n++;
+402                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i-1][j+1] == \textcolor{charliteral}{'*'}) n++;
+403                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i][j+1] == \textcolor{charliteral}{'*'}) n++;
+404                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i+1][j+1] == \textcolor{charliteral}{'*'}) n++;
+405                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i+1][j] == \textcolor{charliteral}{'*'}) n++;
+406                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i+1][j-1] == \textcolor{charliteral}{'*'}) n++;
+407                 
+408                     \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}[i][j] = (char)(n+48);
+409                 \}
+410             \}
+411         \}
+412         
+413         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; i++)
+414             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<\hyperlink{classpkg_1_1main_frame_a0edb10d75697656c940f3b5e3ba7d9ef}{mainFrame}.PROWS; j++)
+415                 buttons[i][j].addActionListener(\textcolor{keyword}{new} buttonAction(i, j, \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}, 
+      \hyperlink{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{signs}, \textcolor{keyword}{this}, \hyperlink{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{timer}, handleRank));
+416         
+417         \hyperlink{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{gPanel}.setVisible(\textcolor{keyword}{true});
+418         
+419         \textcolor{comment}{/*for(int i=1; i<=mainFrame.PROWS; i++)\{}
+420 \textcolor{comment}{            for(int j=1; j<=mainFrame.PROWS; j++)\{}
+421 \textcolor{comment}{                System.out.print(signs[i][j] + " ");}
+422 \textcolor{comment}{            \}}
+423 \textcolor{comment}{            System.out.println("");}
+424 \textcolor{comment}{        \}*/}
+425     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!ckbox\+Flag@{ckbox\+Flag}}
+\index{ckbox\+Flag@{ckbox\+Flag}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{ckbox\+Flag}{ckboxFlag}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Radio\+Button pkg.\+main\+Frame.\+ckbox\+Flag\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}{}\label{classpkg_1_1main_frame_aa5f83e91dbc66938adbeb69d07446101}
+
+
+main\+Frame.\+java 파일의 66 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!F\+L\+AG@{F\+L\+AG}}
+\index{F\+L\+AG@{F\+L\+AG}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{F\+L\+AG}{FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+main\+Frame.\+F\+L\+AG = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_a505e81ce8df404341832e27fcb88e1de}{}\label{classpkg_1_1main_frame_a505e81ce8df404341832e27fcb88e1de}
+
+
+main\+Frame.\+java 파일의 42 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+decide\+End(), pkg.\+main\+Frame.\+set\+Game(), pkg.\+button\+Action.\+take\+Action().
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!g\+Panel@{g\+Panel}}
+\index{g\+Panel@{g\+Panel}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{g\+Panel}{gPanel}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Panel pkg.\+main\+Frame.\+g\+Panel\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}{}\label{classpkg_1_1main_frame_a17ea45ba089445a24b9da9bf561f6603}
+
+
+main\+Frame.\+java 파일의 54 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!grp1@{grp1}}
+\index{grp1@{grp1}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{grp1}{grp1}}]{\setlength{\rightskip}{0pt plus 5cm}Button\+Group pkg.\+main\+Frame.\+grp1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}{}\label{classpkg_1_1main_frame_a5411fefa1bd3ef463e0823c2e0f7d528}
+
+
+main\+Frame.\+java 파일의 67 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!grp2@{grp2}}
+\index{grp2@{grp2}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{grp2}{grp2}}]{\setlength{\rightskip}{0pt plus 5cm}Button\+Group pkg.\+main\+Frame.\+grp2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}{}\label{classpkg_1_1main_frame_a7a69bed6d7c9ba24be87409ecf1295a4}
+
+
+main\+Frame.\+java 파일의 72 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!label\+Time@{label\+Time}}
+\index{label\+Time@{label\+Time}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{label\+Time}{labelTime}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+main\+Frame.\+label\+Time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}{}\label{classpkg_1_1main_frame_abd8e5f522ea7312634baf06ed61d5206}
+
+
+main\+Frame.\+java 파일의 64 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!L\+E\+V\+EL@{L\+E\+V\+EL}}
+\index{L\+E\+V\+EL@{L\+E\+V\+EL}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{L\+E\+V\+EL}{LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}String pkg.\+main\+Frame.\+L\+E\+V\+EL = \char`\"{}Novice\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}{}\label{classpkg_1_1main_frame_af08a1a3e5a422b15f9ebe173a386de24}
+
+
+main\+Frame.\+java 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+main\+Frame.\+set\+Game().
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!main\+Content@{main\+Content}}
+\index{main\+Content@{main\+Content}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{main\+Content}{mainContent}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Panel pkg.\+main\+Frame.\+main\+Content\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}{}\label{classpkg_1_1main_frame_ac52666e4454808a34bc19f554aba065b}
+
+
+main\+Frame.\+java 파일의 56 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!menu\+Bar@{menu\+Bar}}
+\index{menu\+Bar@{menu\+Bar}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{menu\+Bar}{menuBar}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Bar pkg.\+main\+Frame.\+menu\+Bar\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}{}\label{classpkg_1_1main_frame_a83694a00c25375434549ffd58d10ad77}
+
+
+main\+Frame.\+java 파일의 57 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!M\+I\+NE@{M\+I\+NE}}
+\index{M\+I\+NE@{M\+I\+NE}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{M\+I\+NE}{MINE}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+main\+Frame.\+M\+I\+NE = 7\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}{}\label{classpkg_1_1main_frame_a2d3b62dc427e3bfd3247b51456d78882}
+
+
+main\+Frame.\+java 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+decide\+End(), pkg.\+main\+Frame.\+set\+Game().
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!mn\+Exit@{mn\+Exit}}
+\index{mn\+Exit@{mn\+Exit}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{mn\+Exit}{mnExit}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+main\+Frame.\+mn\+Exit\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}{}\label{classpkg_1_1main_frame_ae8893bf8bbe88ef0095ae7aa423e2b23}
+
+
+main\+Frame.\+java 파일의 58 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!mn\+Level@{mn\+Level}}
+\index{mn\+Level@{mn\+Level}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{mn\+Level}{mnLevel}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+main\+Frame.\+mn\+Level\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}{}\label{classpkg_1_1main_frame_adceefa443b0c2344aa1ad15f8da92dac}
+
+
+main\+Frame.\+java 파일의 60 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!mn\+Record@{mn\+Record}}
+\index{mn\+Record@{mn\+Record}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{mn\+Record}{mnRecord}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+main\+Frame.\+mn\+Record\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}{}\label{classpkg_1_1main_frame_adf7d30ed5ce4e5567e4228efaf962161}
+
+
+main\+Frame.\+java 파일의 61 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!mntm\+Exit@{mntm\+Exit}}
+\index{mntm\+Exit@{mntm\+Exit}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{mntm\+Exit}{mntmExit}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+main\+Frame.\+mntm\+Exit\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}{}\label{classpkg_1_1main_frame_ab5c36db42de946a49e1955e4e6bdfd6b}
+
+
+main\+Frame.\+java 파일의 59 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!mntm\+Ranking@{mntm\+Ranking}}
+\index{mntm\+Ranking@{mntm\+Ranking}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{mntm\+Ranking}{mntmRanking}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+main\+Frame.\+mntm\+Ranking\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}{}\label{classpkg_1_1main_frame_a998c4b1062e1b23bc0cbfe05a12fa138}
+
+
+main\+Frame.\+java 파일의 62 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!P\+R\+O\+WS@{P\+R\+O\+WS}}
+\index{P\+R\+O\+WS@{P\+R\+O\+WS}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+WS}{PROWS}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+main\+Frame.\+P\+R\+O\+WS = 8\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}{}\label{classpkg_1_1main_frame_a6d9a76db81895214a2acaab598dc2a7c}
+
+
+main\+Frame.\+java 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+action\+Performed(), pkg.\+main\+Frame.\+set\+Game(), pkg.\+button\+Action.\+take\+Action().
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!radio\+Button\+Customize@{radio\+Button\+Customize}}
+\index{radio\+Button\+Customize@{radio\+Button\+Customize}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{radio\+Button\+Customize}{radioButtonCustomize}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Radio\+Button\+Menu\+Item pkg.\+main\+Frame.\+radio\+Button\+Customize\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}{}\label{classpkg_1_1main_frame_a0391d895fba86ae5b87b88eb2b8b876e}
+
+
+main\+Frame.\+java 파일의 71 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!radio\+Button\+Expert@{radio\+Button\+Expert}}
+\index{radio\+Button\+Expert@{radio\+Button\+Expert}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{radio\+Button\+Expert}{radioButtonExpert}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Radio\+Button\+Menu\+Item pkg.\+main\+Frame.\+radio\+Button\+Expert\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}{}\label{classpkg_1_1main_frame_a3c5879fc83a0488e3cf3d42dda313c13}
+
+
+main\+Frame.\+java 파일의 70 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!radio\+Button\+Intermediate@{radio\+Button\+Intermediate}}
+\index{radio\+Button\+Intermediate@{radio\+Button\+Intermediate}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{radio\+Button\+Intermediate}{radioButtonIntermediate}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Radio\+Button\+Menu\+Item pkg.\+main\+Frame.\+radio\+Button\+Intermediate\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}{}\label{classpkg_1_1main_frame_ae0f421df54f124f20ade63f63bf53ccc}
+
+
+main\+Frame.\+java 파일의 69 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!radio\+Button\+Novice@{radio\+Button\+Novice}}
+\index{radio\+Button\+Novice@{radio\+Button\+Novice}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{radio\+Button\+Novice}{radioButtonNovice}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Radio\+Button\+Menu\+Item pkg.\+main\+Frame.\+radio\+Button\+Novice\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}{}\label{classpkg_1_1main_frame_a13b463f756bd15fbba342d2a810b0953}
+
+
+main\+Frame.\+java 파일의 68 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!rank@{rank}}
+\index{rank@{rank}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{rank}{rank}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rank\+Info} \mbox{[}$\,$\mbox{]} pkg.\+main\+Frame.\+rank = new {\bf rank\+Info}\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_a4a021c36a28ece6900f13d2254e13a96}{}\label{classpkg_1_1main_frame_a4a021c36a28ece6900f13d2254e13a96}
+
+
+main\+Frame.\+java 파일의 50 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!signs@{signs}}
+\index{signs@{signs}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{signs}{signs}}]{\setlength{\rightskip}{0pt plus 5cm}char \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} pkg.\+main\+Frame.\+signs\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}{}\label{classpkg_1_1main_frame_ae3c9f6e7ee48c1661dc3fe814fd67554}
+
+
+main\+Frame.\+java 파일의 47 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!started@{started}}
+\index{started@{started}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{started}{started}}]{\setlength{\rightskip}{0pt plus 5cm}boolean pkg.\+main\+Frame.\+started = false\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_ad050752ff60e9b7fa6ea201df1b223a6}{}\label{classpkg_1_1main_frame_ad050752ff60e9b7fa6ea201df1b223a6}
+
+
+main\+Frame.\+java 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+action\+Performed(), pkg.\+button\+Action.\+decide\+End(), pkg.\+main\+Frame.\+initialize(), pkg.\+main\+Frame.\+set\+Game(), pkg.\+button\+Action.\+take\+Action().
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!this\+Class@{this\+Class}}
+\index{this\+Class@{this\+Class}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{this\+Class}{thisClass}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf main\+Frame} pkg.\+main\+Frame.\+this\+Class = this\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}{}\label{classpkg_1_1main_frame_aa7857342de44fb7ddfa5d6e2685f71fb}
+
+
+main\+Frame.\+java 파일의 37 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!timer@{timer}}
+\index{timer@{timer}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf game\+Timer} pkg.\+main\+Frame.\+timer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}{}\label{classpkg_1_1main_frame_aa204a940456c1c064259cafdd59434a6}
+
+
+main\+Frame.\+java 파일의 53 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::main\+Frame@{pkg\+::main\+Frame}!Total\+F\+L\+AG@{Total\+F\+L\+AG}}
+\index{Total\+F\+L\+AG@{Total\+F\+L\+AG}!pkg\+::main\+Frame@{pkg\+::main\+Frame}}
+\subsubsection[{\texorpdfstring{Total\+F\+L\+AG}{TotalFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+main\+Frame.\+Total\+F\+L\+AG = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1main_frame_a05dfc088773f5e52294e2ca37cccbcf1}{}\label{classpkg_1_1main_frame_a05dfc088773f5e52294e2ca37cccbcf1}
+
+
+main\+Frame.\+java 파일의 43 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+button\+Action.\+decide\+End(), pkg.\+main\+Frame.\+set\+Game(), pkg.\+button\+Action.\+take\+Action().
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/pkg/\hyperlink{main_frame_8java}{main\+Frame.\+java}\end{DoxyCompactItemize}

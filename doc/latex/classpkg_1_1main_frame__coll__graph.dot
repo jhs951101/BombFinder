@@ -1,0 +1,38 @@
+digraph "pkg.mainFrame"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pkg.mainFrame\n|+ LEVEL\l+ PROWS\l+ MINE\l+ FLAG\l+ TotalFLAG\l+ started\l~ name\l- signs\l|+ mainFrame()\l+ setGame()\l+ isNumber()\l+ isBlank()\l+ main()\l- initialize()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{JFrame\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -mntmExit\n-mntmRanking" ,arrowhead="odiamond"];
+  Node3 [label="{JMenuItem\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~buttons\n~btnStart" ,arrowhead="odiamond"];
+  Node4 [label="{JButton\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -menuBar" ,arrowhead="odiamond"];
+  Node5 [label="{JMenuBar\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -timer" ,arrowhead="odiamond"];
+  Node6 [label="{pkg.gameTimer\n|~ flag\l- second\l- minute\l|+ gameTimer()\l+ gameTimer()\l+ run()\l+ getSecond()\l+ getMinute()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1game_timer.html",tooltip="위쪽에 시간을 띄우고 시간 정보를 갖고있는 클래스 "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node7 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node6 [color="grey25",fontsize="10",style="solid",label=" -time" ,arrowhead="odiamond"];
+  Node8 [label="{JLabel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -thisClass" ,arrowhead="odiamond"];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -grp1\n-grp2" ,arrowhead="odiamond"];
+  Node9 [label="{ButtonGroup\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -mnLevel\n-mnRecord\n-mnExit" ,arrowhead="odiamond"];
+  Node10 [label="{JMenu\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -labelTime" ,arrowhead="odiamond"];
+  Node11 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -mainContent\n-gPanel" ,arrowhead="odiamond"];
+  Node11 [label="{JPanel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -radioButtonIntermediate\n-radioButtonCustomize\n-radioButtonExpert\n-radioButtonNovice" ,arrowhead="odiamond"];
+  Node12 [label="{JRadioButtonMenuItem\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~ckboxHand\n-ckboxFlag" ,arrowhead="odiamond"];
+  Node13 [label="{JRadioButton\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~handleRank" ,arrowhead="odiamond"];
+  Node14 [label="{pkg.rankInOut\n||+ rankInOut()\l+ rankInOut()\l+ InsertWrite()\l+ showAll()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1rank_in_out.html",tooltip="랭킹 정보를 기록하고 화면에 띄우기 위한 클래스 "];
+  Node1 -> Node14 [color="grey25",fontsize="10",style="solid",label=" -frame" ,arrowhead="odiamond"];
+  Node15 -> Node14 [color="grey25",fontsize="10",style="solid",label=" ~ranks" ,arrowhead="odiamond"];
+  Node15 [label="{pkg.rankInfo\n|- name\l- minute\l- second\l|+ rankInfo()\l+ rankInfo()\l+ getName()\l+ getSecond()\l+ getMinute()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1rank_info.html",tooltip="랭킹 정보 하나를 의미하는 클래스 "];
+  Node15 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -rank" ,arrowhead="odiamond"];
+}

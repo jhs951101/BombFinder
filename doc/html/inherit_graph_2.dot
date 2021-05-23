@@ -1,0 +1,9 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="JFrame",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pkg.mainFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1main_frame.html",tooltip="지뢰찾기 게임이 진행되는 데에 있어 중심이 되는 UI 클래스 "];
+}
